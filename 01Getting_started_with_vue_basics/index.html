@@ -9,7 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <h1>你好!{{xx.xxs}}</h1>
+        <!--data數據傳遞-->
+        <h1>你好!{{name}}</h1>
+        <!--v-bind HTML屬性中綁定data中的數據-->
+        <a v-bind:href="yahoo_link">去yahoo</a><br>
+        <!--v-bind 縮寫 HTML屬性中綁定data中的數據-->
+        <a :href="google_link">去google</a>
     </div>
     <script src="index.js"></script>
 </body>
